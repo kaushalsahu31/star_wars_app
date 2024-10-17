@@ -1,0 +1,41 @@
+
+.navbar {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-logo a {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'StarWars', sans-serif;  
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #ffcc00;
+    color: #111;
+    border-radius: 5px;
+  }
+  

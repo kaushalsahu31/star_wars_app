@@ -1,0 +1,86 @@
+.character-details {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.character-details .character-overlay {
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay over the background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  width: 100%;
+}
+
+.character-details h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.character-details .character-card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.character-details .character-info,
+.character-details .character-associated {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.character-details .character-info ul,
+.character-details .character-associated ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.character-details .character-info li,
+.character-details .character-associated li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.character-details h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+}
+
+.character-details .loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadein {
+  animation: fadeIn 1s ease;
+}

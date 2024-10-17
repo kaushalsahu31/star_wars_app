@@ -1,0 +1,104 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    width: 100vw;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1001;
+  }
+  
+
+
+  
+  .modal-overlay .character-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay over the background */
+    /* padding: 40px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  .modal-overlay h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+  .modal-overlay .character-card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .modal-overlay .character-info,
+  .modal-overlay .character-associated {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .modal-overlay .character-info ul,
+  .modal-overlay .character-associated ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .modal-overlay .character-info li,
+  .modal-overlay .character-associated li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .modal-overlay h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+  }
+  
+  .modal-overlay .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffcc00;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadein {
+    animation: fadeIn 1s ease;
+  }
+  
